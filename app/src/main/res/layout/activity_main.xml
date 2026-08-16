@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#F7F7F7"
+    tools:context=".MainActivity">
+
+
+        <View
+            android:id="@+id/yellowBar"
+            android:layout_width="55dp"
+            android:layout_height="0dp"
+            android:background="#F4C430"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/collegeText"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="College of Science and Technology"
+            android:textColor="#222222"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:rotation="90"
+            android:maxLines="1"
+            app:layout_constraintTop_toTopOf="@id/yellowBar"
+            app:layout_constraintBottom_toBottomOf="@id/yellowBar"
+            app:layout_constraintStart_toStartOf="@id/yellowBar"
+            app:layout_constraintEnd_toEndOf="@id/yellowBar" />
+
+        <ImageView
+            android:id="@+id/studentImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/my_profile"
+            android:scaleType="centerCrop"
+            android:contentDescription="Student Profile Picture"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/yellowBar" />
+
+        <TextView
+            android:id="@+id/nameLabel"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Name:"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/studentImage"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/nameEdit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="Dechen Yangzom"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:singleLine="true"
+            app:layout_constraintTop_toTopOf="@id/nameLabel"
+            app:layout_constraintBottom_toBottomOf="@id/nameLabel"
+            app:layout_constraintStart_toEndOf="@id/nameLabel"
+            app:layout_constraintEnd_toStartOf="@id/yellowBar" />
+
+        <TextView
+            android:id="@+id/studentIdLabel"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Student ID:"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/nameLabel"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/studentIdEdit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="02240151"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:singleLine="true"
+            app:layout_constraintTop_toTopOf="@id/studentIdLabel"
+            app:layout_constraintBottom_toBottomOf="@id/studentIdLabel"
+            app:layout_constraintStart_toEndOf="@id/studentIdLabel"
+            app:layout_constraintEnd_toStartOf="@id/yellowBar" />
+
+        <TextView
+            android:id="@+id/programmeLabel"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Programme:"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/studentIdLabel"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/programmeEdit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="BE in Information Technology"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:singleLine="true"
+            app:layout_constraintTop_toTopOf="@id/programmeLabel"
+            app:layout_constraintBottom_toBottomOf="@id/programmeLabel"
+            app:layout_constraintStart_toEndOf="@id/programmeLabel"
+            app:layout_constraintEnd_toStartOf="@id/yellowBar" />
+
+        <TextView
+            android:id="@+id/departmentLabel"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Department:"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/programmeLabel"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/departmentEdit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="Computing Technologies"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:singleLine="true"
+            app:layout_constraintTop_toTopOf="@id/departmentLabel"
+            app:layout_constraintBottom_toBottomOf="@id/departmentLabel"
+            app:layout_constraintStart_toEndOf="@id/departmentLabel"
+            app:layout_constraintEnd_toStartOf="@id/yellowBar" />
+
+        <TextView
+            android:id="@+id/semesterLabel"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Semester:"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/departmentLabel"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/semesterEdit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="Autumn"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:singleLine="true"
+            app:layout_constraintTop_toTopOf="@id/semesterLabel"
+            app:layout_constraintBottom_toBottomOf="@id/semesterLabel"
+            app:layout_constraintStart_toEndOf="@id/semesterLabel"
+            app:layout_constraintEnd_toStartOf="@id/yellowBar" />
+
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Email:"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/semesterLabel"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/emailEdit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="02240151.cst@rub.edu.bt"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            app:layout_constraintTop_toTopOf="@id/emailLabel"
+            app:layout_constraintBottom_toBottomOf="@id/emailLabel"
+            app:layout_constraintStart_toEndOf="@id/emailLabel"
+            app:layout_constraintEnd_toStartOf="@id/yellowBar" />
+
+        <TextView
+            android:id="@+id/phoneLabel"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Phone:"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/emailLabel"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/phoneEdit"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="17****56"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:inputType="phone"
+            app:layout_constraintTop_toTopOf="@id/phoneLabel"
+            app:layout_constraintBottom_toBottomOf="@id/phoneLabel"
+            app:layout_constraintStart_toEndOf="@id/phoneLabel"
+            app:layout_constraintEnd_toStartOf="@id/yellowBar" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4db272"
+            android:text="Save"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#d32c31"
+            android:layout_marginStart="8dp"
+            android:text="Clear"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/saveButton" />
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#dfce20"
+            android:layout_marginStart="8dp"
+            android:text="Edit"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/clearButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
