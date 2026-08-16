@@ -251,7 +251,7 @@
             android:id="@+id/editButton"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="#dfce20"
+            android:backgroundTint="#f5d30a"
             android:layout_marginStart="8dp"
             android:text="Edit"
             android:textSize="15sp"
